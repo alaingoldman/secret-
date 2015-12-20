@@ -1,7 +1,7 @@
 /* GENERAL */
 *{margin:0;padding:0;}
 #page{
-  width: 1000px;
+  width: 1200px;
   margin:0 auto;
   min-height: 400px;
 }
@@ -143,7 +143,7 @@ a#logo:hover{
   float: left;
   width:100px;
   height: 100px;
-  margin-left:49px;
+  margin-left:83px;
   margin-bottom: 50px;
 }
 #aff .guy img{
@@ -154,7 +154,7 @@ a#logo:hover{
 }
 /* Spit Barz */
 .barz{
-  width: 300px;
+  width: 366px;
   height: 90px;
   background-color:#f6f6f6;
   float: left;
@@ -162,7 +162,7 @@ a#logo:hover{
   margin-left: 50px;
   background-image:url("b2.png");
   background-repeat: no-repeat;
-  background-position: 6px 22px; 
+  background-position: 18px 22px; 
 }
 #spit .barz:nth-of-type(1){
   margin-left: 0;
@@ -176,7 +176,7 @@ a#logo:hover{
   font-weight: 700;
   letter-spacing: 2px;
   font-size: 13px;
-  margin-left:78px;
+  margin-left:92px;
   margin-top: 29px;
 }
 .barz .bottom{
@@ -185,7 +185,7 @@ a#logo:hover{
   font-style: italic;
   color:#999;
   font-size: 13px;
-  margin-left:78px;
+  margin-left:92px;
   margin-top:6px;
 }
 /* footer */
@@ -213,4 +213,183 @@ a#logo:hover{
 }
 #footer .feet:hover{
   color:white;
+}
+/* Show Off */
+#showoff{
+  background-color:#f6f6f6;
+  height: 590px;
+}
+#leftie{
+  width:50%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+}
+#leftie img{
+  width: 100%;
+}
+#rightie{
+  width:45%;
+  margin-left:5%;
+  height: 100%;
+  float: left;
+  display: inline-block; 
+}
+#type{
+  font-family: 'Karla', sans-serif;
+  color: #999;
+  font-size: 11px;
+  margin-top:35px;
+}
+#title{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin-top: 20px;
+}
+#price{
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  margin-top:20px;
+  color:#999;
+}
+#price .cancel{
+  font-size: 10px;
+  display: inline-block;
+}
+#price .actual{
+  color: #73cdd7;
+  margin-left:10px;
+  font-size: 20px;
+  display: inline-block;
+}
+#description{
+  font-family: 'Karla', sans-serif;
+  color:#999;
+  margin-top:20px;
+  margin-right: 45px;
+  font-size: 13px;
+  line-height: 20px;
+}
+#hurryupandbuy{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  height:46px;
+  width: 200px;
+  border:1px solid black;
+  margin-top:76px;
+  line-height: 43px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#hurryupandbuy:hover{
+  color: white;
+  background-color:black;
+}
+.nodec{
+  text-decoration: none;
+}
+hr.thin{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e4e4e4;
+  margin: 1em 0;
+  padding: 0; 
+  margin-right: 40px;
+}
+.extras{
+  margin-top: 8px;
+  font-size: 11px;
+  font-family: 'Karla', sans-serif;
+  color:#999;
+}
+.extras span{
+  color:#666;
+}
+.extras span.bluez{
+  color: #73cdd7;
+}
+/* splinter */
+#splinter{
+  margin-top:40px;
+  text-align: center;
+}
+#splinter #north section{
+  margin-left:95px;
+  display: inline-block;
+  color:#999;
+  font-family: 'Roboto Slab', serif;
+}
+
+#splinter #north section:nth-of-type(1){
+  color:black;
+  margin-left:0;
+}
+hr.raisethebar{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e4e4e4;
+  margin: 35px auto;
+  padding: 0; 
+  width: 75%;
+}
+.north-west{
+  font-family: 'Karla', sans-serif;
+  color: #999;
+  width: 75%;
+  margin:31px auto;
+  line-height: 31px;
+}
+/* Minitron */
+#minitron{
+  height:300px;
+  background-color:pink;
+  overflow: hidden;
+  background-image: url("oldguyskids.jpg");
+  background-size: 100%;
+  color:white;
+  text-align: center;
+}
+#minitron img{
+  width: 100%;
+}
+/* The keeper of the squares */
+.keeper{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#little-text{
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+  margin-top:124px;
+}
+#little-text span{
+  padding-left:12px;
+  padding-right:12px;
+}
+#big-text{
+  margin-top:10px;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+.square{
+  background-color:#f6f6f6;
+  width:250px;
+  height:250px;
+}
+#wutrdoez{
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  margin-top:52px;
+  margin-left:176px;
+  margin-bottom: 25px;
+  font-size: 13px;
 }
