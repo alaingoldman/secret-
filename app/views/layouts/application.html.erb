@@ -12,14 +12,19 @@
   <body>
     <div id="page">
       <div id="nav">
-        <a href="#" id="logo">ARA SHOP</a>
-        <a href="#" class="menu">CART</a>
+        <%= link_to "ARA SHOP", root_url, id: "logo" %>
+        <%= link_to "NEW PRODUCT", new_product_path, class: "menu" %>
         <a href="#" class="menu">LOGIN</a>
         <a href="#" class="menu">SHOP</a>
-        <a href="#" class="menu">HOME</a>
+        <%= link_to "HOME", root_url, class: "menu" %>
       </div>
       <!-- nav end -->
       <div id="content">
+        <% flash.each do |key,value| %>
+            <div id="<%= key %>">
+                <%= value %>
+            </div>
+        <% end %>
         <%= yield %>
       </div>
       <!-- content end -->
