@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AraApp - Buy Weird Men's Clothing</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn:400italic' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="page">
+      <div id="nav">
+        <a href="#" id="logo">ARA SHOP</a>
+        <a href="#" class="menu">CART</a>
+        <a href="#" class="menu">LOGIN</a>
+        <a href="#" class="menu">SHOP</a>
+        <a href="#" class="menu">HOME</a>
+      </div>
+      <!-- nav end -->
+      <div id="content">
+        <%= yield %>
+      </div>
+      <!-- content end -->
+      <div id="spit">
+        <div class="barz">
+          <div class="top">FREE SHIPPING</div>
+          <div class="bottom">Sed eget ipsum sed ipsum tempus fringilla</div>
+        </div>
+        <div class="barz">
+          <div class="top">FREE RETURN</div>
+          <div class="bottom">Sed eget ipsum sed ipsum tempus fringilla</div>
+        </div>
+        <div class="barz">
+          <div class="top">ORDER TRACKING</div>
+          <div class="bottom">Sed eget ipsum sed ipsum tempus fringilla</div>
+        </div>
+      </div>
+      <!-- spit end -->
+      <%= image_tag("map.png", width: '100%', class: "map") %>
+      <div id="footer">
+        <a href="#" class="feet">About Us</a>
+        <a href="#" class="feet">Visit Shop</a>
+        <a href="#" class="feet">Faqs</a>
+        <a href="#" class="feet">Order Tracking</a>
+      </div>
+      <!-- footer end -->
+    </div>
+    <!-- page end -->
+  </body>
+</html>
