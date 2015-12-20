@@ -1,25 +1,24 @@
 			<div id="showoff">
 				<div id="leftie">	
-					<!--<img src="matrixclothes1.jpg">-->
 					<%= image_tag("matrixclothes1.jpg") %>
 				</div><!-- leftie end -->
 				<div id="rightie">
 					<div id="type">
-						Men's Clothes i guess
+						<%= @product.category %>
 					</div>
 					<div id="title">
-						Matrix Sweater
+						<%= @product.title %>
 					</div>
 					<div id="price">
 						<span class="cancel">
 							<s>$340.00</s>
 						</span>
 						<span class="actual">
-							$200.00
+							<%= number_to_currency(@product.price)%>
 						</span>
 					</div>
 					<div id="description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu eros vitae est consequat interdum. Praesent luctus enim a est efficitur tristique. Suspendisse ullamcorper augue sed diam dapibus, et porta diam viverra. Nulla scelerisque viverra lectus, nec facilisis nisi tempor varius. Vivamus enim erat. 
+					    <%= @product.description %>
 					</div>
 					<a href="#" class="nodec">
 						<div id="hurryupandbuy">
