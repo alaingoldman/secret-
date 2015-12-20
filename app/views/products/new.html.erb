@@ -1,0 +1,9 @@
+<h3> create a product </h3>
+
+<%= form_for @product, html: {class: 'transformer'} do |f| %>
+  <%= f.text_field :title, placeholder: "title" %> 
+  <%= f.text_field :category,  placeholder: "category" %>
+  <%= f.text_area  :description, placeholder: "description" %>
+  <%= f.number_field :price, placeholder: "12.50", step: 'any' %>
+  <%= f.submit %>
+<% end %>
