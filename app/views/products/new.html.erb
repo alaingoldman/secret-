@@ -1,9 +1,10 @@
 <h3> create a product </h3>
 
-<%= form_for @product, html: {class: 'transformer'} do |f| %>
+<%= form_for @product, html: {class: 'transformer', multipart: true} do |f| %>
   <%= f.text_field :title, placeholder: "title", value: "Jaquard Pique" %> 
   <%= f.text_field :category,  placeholder: "category", value: "Shoes" %>
   <%= f.text_area  :description, placeholder: "description", value:"Not text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu eros vitae est consequat interdum. Praesent luctus enim a est efficitur tristique. Suspendisse ullamcorper augue sed diam dapibus, et porta diam viverra. Nulla scelerisque viverra lectus, nec facilisis nisi tempor varius. Vivamus enim erat." %>
   <%= f.number_field :price, placeholder: "12.50", step: 'any', value: "200.25" %>
+  <%= f.file_field :image %>
   <%= f.submit %>
 <% end %>
