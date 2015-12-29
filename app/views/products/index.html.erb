@@ -1,18 +1,19 @@
-			<div id="minitron">
-				<div id="little-text">Home <span>/</span> Shop Style</div>
-				<div id="big-text">SHOP STYLE</div>
-			</div> <!-- minitron end -->
-			<div id="wutrdoez">
-				All Products
-			</div>
-			<% @products.each_slice(4) do |slice| -%>
-              <div class="keeper">
-                <% slice.each do |x| -%>
-                    <%= link_to product_path(x) do %>
-                      <div class="square">
-                  	    <%= image_tag(x.image.url(:medium)) %>
-                      </div>
-                    <% end %>
-                <% end -%>
-              </div>
-            <% end -%>
+<div id="minitron">
+	<div id="little-text">Home <span>/</span> Shop Style</div>
+	<div id="big-text">SHOP STYLE</div>
+</div> <!-- minitron end -->
+<div id="wutrdoez">
+	All Products
+</div>
+<% @products.each_slice(4) do |slice| -%>
+  <div class="keeper">
+    <% slice.each do |x| -%>
+        <%= link_to product_path(x) do %>
+          <div class="square">
+      	    <%= image_tag(x.image.url(:medium)) %>
+          </div>
+        <% end %>
+    <% end -%>
+  </div>
+<% end -%>
+<div class="centaur"> <%= will_paginate @products, previous_label: "<", next_label: ">" %> </div>
