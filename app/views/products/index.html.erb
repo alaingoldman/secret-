@@ -5,27 +5,14 @@
 			<div id="wutrdoez">
 				All Products
 			</div>
-			<div class="keeper">
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-			</div>
-			<div class="keeper">
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-			</div>
-			<div class="keeper">
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-			</div>
-			<div class="keeper">
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-			</div>
+			<% @products.each_slice(4) do |slice| -%>
+              <div class="keeper">
+                <% slice.each do |x| -%>
+                    <%= link_to product_path(x) do %>
+                      <div class="square">
+                  	    <%= image_tag(x.image.url(:medium)) %>
+                      </div>
+                    <% end %>
+                <% end -%>
+              </div>
+            <% end -%>

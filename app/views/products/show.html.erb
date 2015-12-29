@@ -21,10 +21,11 @@
 					    <%= @product.description %>
 					</div>
 					<a href="#" class="nodec">
+					<%= link_to purchase_path(@product) do %>
 						<div id="hurryupandbuy">
 							PURCHASE
 						</div>
-					</a>
+					<% end %>
 					<hr class="thin">
 					<div class="extras"><span>SKU:</span> 4625</div>
 					<div class="extras"><span>Need help:</span> 718 559 8686</div>

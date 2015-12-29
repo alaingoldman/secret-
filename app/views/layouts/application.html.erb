@@ -5,6 +5,10 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Vollkorn:400italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script type="text/javascript">
+      Stripe.setPublishableKey('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
+    </script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -13,9 +17,13 @@
     <div id="page">
       <div id="nav">
         <%= link_to "ARA SHOP", root_url, id: "logo" %>
-        <%= link_to "NEW PRODUCT", new_product_path, class: "menu" %>
-        <a href="#" class="menu">LOGIN</a>
-        <a href="#" class="menu">SHOP</a>
+        <%- if current_user %>
+           <%= link_to "NEW PRODUCT", new_product_path, class: "menu" %>
+           <%= link_to "LOGOUT", destroy_user_session_path, class: "menu", method: "delete" %>
+        <% else  %>
+           <%= link_to "LOGIN", new_user_session_path, class: "menu" %>
+        <% end %>
+        <%= link_to "SHOP", products_path, class: "menu" %>
         <%= link_to "HOME", root_url, class: "menu" %>
       </div>
       <!-- nav end -->
